@@ -28,6 +28,28 @@ The **College Complaint System** is a web-based application designed to make the
 | CSS | Styling |
 | SQLite | Database Management |
 
+---
+
+## 📌 Output
+
+### 👨‍🎓 Student Dashboard
+
+![Student Dashboard](college%20complaint%20student%20dashboard.png)
+
+### 📝 Student Complaint Page
+
+![Student Complaint Page](complaint%20system%20student.png)
+
+### 📊 Complaint Dashboard
+
+![Complaint Dashboard](complaint%20system%20dashboard.png)
+
+### 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](complaint%20system%20admin.png)
+
+---
+
 ## 🎯 Objective
 
 To provide a simple, transparent, and user-friendly complaint management system that improves communication between students and college administration.
