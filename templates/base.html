@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>College Complaint System</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;color:#222}
+nav{background:#1f3a5f;color:#fff;padding:12px 24px;display:flex;justify-content:space-between}
+nav a{color:#fff;margin-left:16px;text-decoration:none}
+.box{max-width:980px;margin:24px auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 1px 4px #0002}
+input,select,textarea{width:100%;padding:8px;margin:6px 0 14px;box-sizing:border-box}
+button,.btn{background:#1f3a5f;color:#fff;border:0;padding:9px 16px;border-radius:5px;cursor:pointer;text-decoration:none}
+table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #ddd;text-align:left;font-size:14px;vertical-align:top}
+.flash{background:#fff3cd;padding:10px;margin-bottom:12px;border-radius:5px}
+.tag{padding:3px 9px;border-radius:12px;font-size:12px;color:#fff}
+.Submitted{background:#6c757d}.Assigned{background:#0d6efd}.In-Progress{background:#fd7e14}.Resolved{background:#198754}
+.cards{display:flex;gap:12px;margin-bottom:16px}.card{flex:1;background:#eef2f7;padding:12px;border-radius:6px;text-align:center;text-decoration:none;color:#222}
+.card b{font-size:22px;display:block}
+td input,td select{margin:2px 0;padding:5px}
+</style></head><body>
+<nav><b>College Complaint System</b><div>
+{% if session.uid %}{{ session.name }} ({{ session.role }})
+{% if session.role=='student' %}<a href="{{ url_for('new_complaint') }}">New Complaint</a>{% endif %}
+<a href="{{ url_for('dashboard') }}">Dashboard</a><a href="{{ url_for('logout') }}">Logout</a>
+{% else %}<a href="{{ url_for('login') }}">Login</a><a href="{{ url_for('register') }}">Register</a>{% endif %}
+</div></nav>
+<div class="box">
+{% for m in get_flashed_messages() %}<div class="flash">{{ m }}</div>{% endfor %}
+{% block content %}{% endblock %}
+</div></body></html>

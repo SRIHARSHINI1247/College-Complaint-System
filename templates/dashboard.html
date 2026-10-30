@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<h2>My Complaints</h2>
+<table><tr><th>#</th><th>Category</th><th>Location</th><th>Description</th><th>Status</th><th>Assigned To</th><th>Remarks</th><th>Date</th></tr>
+{% for c in items %}<tr><td>{{ c.id }}</td><td>{{ c.category }}</td><td>{{ c.location }}</td><td>{{ c.description }}</td>
+<td><span class="tag {{ c.status|replace(' ','-') }}">{{ c.status }}</span></td><td>{{ c.assigned_to or '-' }}</td>
+<td>{{ c.remarks or '-' }}</td><td>{{ c.created_at.strftime('%d %b %Y') }}</td></tr>
+{% else %}<tr><td colspan="8">No complaints yet.</td></tr>{% endfor %}</table>
+{% endblock %}

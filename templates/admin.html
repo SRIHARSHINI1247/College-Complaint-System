@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block content %}
+<h2>Admin Dashboard</h2>
+<div class="cards">{% for s in statuses %}<a class="card" href="?status={{ s }}"><b>{{ counts[s] }}</b>{{ s }}</a>{% endfor %}
+<a class="card" href="{{ url_for('admin') }}">Show all</a></div>
+<table><tr><th>#</th><th>Student</th><th>Category / Location</th><th>Description</th><th>Update</th></tr>
+{% for c in items %}<tr><td>{{ c.id }}</td><td>{{ c.user.name }}</td><td>{{ c.category }}<br><small>{{ c.location }}</small></td>
+<td>{{ c.description }}</td>
+<td><form method="post" action="{{ url_for('update', cid=c.id) }}">
+<select name="status">{% for s in statuses %}<option {{ 'selected' if s==c.status }}>{{ s }}</option>{% endfor %}</select>
+<input name="assigned_to" placeholder="Assigned to" value="{{ c.assigned_to or '' }}">
+<input name="remarks" placeholder="Remarks" value="{{ c.remarks or '' }}"><button>Save</button></form></td></tr>
+{% else %}<tr><td colspan="5">No complaints.</td></tr>{% endfor %}</table>
+{% endblock %}
