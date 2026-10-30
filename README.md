@@ -1,29 +1,33 @@
-College Complaint System
+# 🎓 College Complaint System
 
-The College Complaint System is a web-based application developed to simplify the process of submitting and managing student complaints. It provides a platform where students can register, log in, submit complaints, and track their complaint status. Administrators can view complaints, manage them, and update their status.
+### A Simple and Efficient Platform for Student Complaint Management
 
-Features
+The **College Complaint System** is a web-based application designed to make the process of raising and managing student complaints easier, faster, and more organized. It provides a centralized platform where students can submit complaints and track their progress, while administrators can review, manage, and update complaints efficiently.
 
-Student Registration and Login
+---
 
-Admin Login
+## ✨ Key Features
 
-Complaint Submission
+- 👨‍🎓 **Student Registration & Login** – Secure access for students.
+- 📝 **Complaint Submission** – Students can easily submit their complaints.
+- 📊 **Complaint Tracking** – Track the progress and status of submitted complaints.
+- 👨‍💼 **Admin Dashboard** – Administrators can view and manage student complaints.
+- 🔄 **Status Management** – Update complaints through different stages:
+  - Submitted
+  - Assigned
+  - In Progress
+  - Resolved
 
-Complaint Management
+## 🛠️ Technologies Used
 
-Complaint Status Tracking
+| Technology | Purpose |
+|---|---|
+| Python | Backend Development |
+| Flask | Web Framework |
+| HTML | Page Structure |
+| CSS | Styling |
+| SQLite | Database Management |
 
-Status Updates
+## 🎯 Objective
 
-Technologies Used
-
-Python
-
-Flask
-
-HTML
-
-CSS
-
-SQLite
+To provide a simple, transparent, and user-friendly complaint management system that improves communication between students and college administration.
