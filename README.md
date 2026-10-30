@@ -34,19 +34,19 @@ The **College Complaint System** is a web-based application designed to make the
 
 ### 📊 Complaint Dashboard
 
-![Complaint Dashboard](complaint%20system%20dashboard.png)
+![Complaint Dashboard](<complaint system dashboard.png>)
 
 ### 👨‍💼 Admin Dashboard
 
-![Admin Dashboard](complaint%20system%20admin.png)
+![Admin Dashboard](<complaint system admin.png>)
 
 ### 👨‍🎓 Student Dashboard
 
-![Student Dashboard](college%20complaint%20student%20dashboard.png)
+![Student Dashboard](<college complaint stduent dashboard.png>)
 
 ### 📝 Student Complaint Page
 
-![Student Complaint Page](complaint%20system%20student.png)
+![Student Complaint Page](<complaint system student.png>)
 
 ---
 
